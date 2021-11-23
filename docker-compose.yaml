@@ -1,0 +1,77 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+    # image: order-management
+    volumes:
+      - ./:/app
+    command: >
+      sh -c "python3 manage.py migrate &&
+             python3 manage.py test &&
+             python3 manage.py runserver 0.0.0.0:8080"
+    env_file:
+      - ./.env
+    ports:
+      - "8080:8080"
+    restart: on-failure
+    depends_on:
+      - db
+
+  redis:
+    image: redis:6
+    ports:
+      - "6379:6379"
+    restart: on-failure
+
+  celery:
+    restart: always
+    build:
+      context: .
+    # image: order-management
+    command: "celery -A OrderManagement.celery worker -B --pidfile= --loglevel=WARNING"
+    volumes:
+      - ./:/app
+    env_file:
+      - ./.env
+    depends_on:
+      - redis
+      - app
+
+  daphne:
+    restart: always
+    build:
+      context: .
+    # image: order-management
+    command: "daphne OrderManagement.asgi:application -b 0 -p 8001"
+    ports:
+      - 8001:8001
+    volumes:
+      - ./:/app
+    env_file:
+      - ./.env
+    depends_on:
+      - redis
+      - app
+
+  db:
+    image: postgres:10-alpine
+    env_file:
+      - ./.env
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  rabbitmq:
+    image: rabbitmq:3.8-management
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    ports:
+      - 15672:15672
+      - 5672:5672
+
+volumes:
+  pgdata:
+  rabbitmq-data:

@@ -1,0 +1,1171 @@
+{
+	"info": {
+		"_postman_id": "b44df0f8-d463-4c56-b0ad-e3a8ce77f7b9",
+		"name": "Yemeksepeti",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Serve",
+			"item": [
+				{
+					"name": "Restaurant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/serve/restaurant/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"restaurant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Süper Dönerci\",\r\n    \"owner\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/serve/restaurant/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"restaurant",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Süper Dönerci",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Süper Dönerci\",\r\n    \"owner\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/restaurant/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"restaurant",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Harika Ev Yemekleri",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Harika Ev Yemekleri\",\r\n    \"owner\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/restaurant/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"restaurant",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Bizim Büfe",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Bizim Büfe\",\r\n    \"owner\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/restaurant/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"restaurant",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/serve/category/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Döner/Kebap\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/serve/category/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"category",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Döner/Kebap",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Döner/Kebap\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/category/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"category",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Ev Yemekleri",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Ev Yemekleri\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/category/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"category",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Fast-Food",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Fast-Food\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/category/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"category",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Food",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/serve/food/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"food",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Döner\",\r\n    \"restaurants\": 1,\r\n    \"categories\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/serve/food/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"food",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Döner",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Döner\",\r\n    \"restaurants\": 1,\r\n    \"categories\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/food/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"food",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "İskender",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"İskender\",\r\n    \"restaurants\": 1,\r\n    \"categories\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/food/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"food",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Etibol İskender",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Etibol İskender\",\r\n    \"restaurants\": 1,\r\n    \"categories\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/food/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"food",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Kuru Fasülye",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Kuru Fasülye\",\r\n    \"restaurants\": 2,\r\n    \"categories\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/food/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"food",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Pilav",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Pilav\",\r\n    \"restaurants\": 2,\r\n    \"categories\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/food/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"food",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Mercibek Çorbası",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Mercibek Çorbası\",\r\n    \"restaurants\": 2,\r\n    \"categories\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/food/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"food",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Goralı",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Goralı\",\r\n    \"restaurants\": 3,\r\n    \"categories\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/food/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"food",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Dilli Kaşarlı",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Dilli Kaşarlı\",\r\n    \"restaurants\": 3,\r\n    \"categories\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/food/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"food",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Yengen",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Yengen\",\r\n    \"restaurants\": 3,\r\n    \"categories\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/food/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"food",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/serve/order/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"order",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Complete Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/serve/order/complete/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"order",
+								"complete",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"foods\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/serve/order/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"order",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"foods\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/order/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"order",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"foods\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/order/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"order",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"foods\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/serve/order/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"serve",
+										"order",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "List Order by User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/serve/order/list_by_user/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"order",
+								"list_by_user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Food by User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/serve/food/list_by_user/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"food",
+								"list_by_user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Restaurant by User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/serve/restaurant/list_by_user/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"restaurant",
+								"list_by_user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate Test Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/serve/food/generate_test_data/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"serve",
+								"food",
+								"generate_test_data",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{TOKEN}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var authServiceUrl = pm.environment.get('BASE_URL');",
+							"var username = pm.environment.get('username');",
+							"var password = pm.environment.get('password');",
+							"var sdk = require('postman-collection');",
+							"",
+							"var isValidTokenRequest = new sdk.Request({",
+							"    url: authServiceUrl + \"/api-token-verify/\", // Use an endpoint that requires being authenticated",
+							"    method: 'POST',",
+							"    header: [",
+							"        new sdk.Header({",
+							"            key: 'content-type',",
+							"            value: 'application/json',",
+							"        }),",
+							"        new sdk.Header({",
+							"            key: 'acccept',",
+							"            value: 'application/json',",
+							"        }),",
+							"        new sdk.Header({",
+							"            key: 'Authorization',",
+							"            value: 'Bearer ' + pm.environment.get(\"TOKEN\"),",
+							"        }),",
+							"    ],",
+							"    body: {",
+							"        mode: 'raw',",
+							"        raw: JSON.stringify({",
+							"            token: pm.environment.get(\"TOKEN\"),",
+							"        })",
+							"    } ",
+							"});",
+							"",
+							"pm.sendRequest(isValidTokenRequest, function (err, response) {",
+							"    if (response.code === 401 || response.code === 400) {",
+							"        refreshToken();",
+							"    }",
+							"});",
+							"",
+							"function refreshToken() {",
+							"    var tokenRequest = new sdk.Request({",
+							"    url: authServiceUrl + '/api-token-auth/',",
+							"    method: 'POST',",
+							"    header: [",
+							"        new sdk.Header({",
+							"            key: 'content-type',",
+							"            value: 'application/json'",
+							"        }),",
+							"        new sdk.Header({",
+							"            key: 'acccept',",
+							"            value: 'application/json'",
+							"        }),",
+							"    ],",
+							"    body: {",
+							"        mode: 'raw',",
+							"        raw: JSON.stringify({",
+							"            username: username,",
+							"            password: password",
+							"        })",
+							"    } ",
+							"  });",
+							"",
+							"  pm.sendRequest(tokenRequest, function (err, response) {",
+							"      if (err) {",
+							"          throw err;",
+							"      }",
+							"      ",
+							"      if (response.code !== 200) {",
+							"          throw new Error('Could not log in.');",
+							"      }",
+							"      ",
+							"    pm.environment.set(\"TOKEN\", response.json().token);",
+							"    console.log(`New token has been set: ${response.json().token}`);",
+							"  });",
+							"}"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin2@admin.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/register/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Uğur Özi",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"uozy@yspt.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/register/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"register",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Cenk Yaldız",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"cyaldiz@yspt.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/register/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"register",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Selin Simge",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"ssimge@yspt.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/register/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"register",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Verify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImJhaGFkaXIuY29sYWtAaHVhd2VpLmNvbSIsImV4cCI6MTYzNzkwNzg1NX0.rAqlVtvmvLyAHePPs_6iYIz5K3Vq9mfsewAMWcwRLoo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api-token-verify/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api-token-verify",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin@admin.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api-token-auth/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api-token-auth",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
